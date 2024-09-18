@@ -9,9 +9,9 @@
     "layer": [
         {
             "data": {
-                "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/js/ne_110m_admin_0_countries.topojson",
+                "url": "https://raw.githubusercontent.com/codeforgermany/click_that_hood/refs/heads/main/public/data/melbourne.geojson",
                 "format": {
-                    "type": "topojson",
+                    "type": "Geojson",
                     "feature": "ne_110m_admin_0_countries"
                 }
             },

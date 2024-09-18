@@ -9,9 +9,9 @@
     "layer": [
         {
             "data": {
-                "url": "https://raw.githubusercontent.com/codeforgermany/click_that_hood/refs/heads/main/public/data/melbourne.geojson",
+                "url": "https://raw.githubusercontent.com/JhonnyMonash/Week9Homework/main/data/melbourne.geojson",
                 "format": {
-                    "type": "Geojson",
+                    "type": "geojson",
                     "feature": "ne_110m_admin_0_countries"
                 }
             },
@@ -21,45 +21,6 @@
                 "stroke": "white"
             }
         },
-        {
-            "data": {
-                "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/2_symbol_map/data/earthquake.csv"
-            },
-            "mark": {
-                "type": "circle",
-                "tooltip": {
-                    "content": "data"
-                }
-            },
-            "encoding": {
-                "longitude": {
-                    "field": "longitude",
-                    "type": "quantitative"
-                },
-                "latitude": {
-                    "field": "latitude",
-                    "type": "quantitative"
-                },
-                "size": {
-                    "field": "mag",
-                    "type": "quantitative",
-                    "title": "Magnitude (Richter scale)",
-                    "scale": {
-                        "domain": [
-                            4,
-                            8
-                        ]
-                    }
-                },
-                "color": {
-                    "field": "depth",
-                    "type": "quantitative",
-                    "title": "Depth in km",
-                    "scale": {
-                        "scheme": "reds"
-                    }
-                }
-            }
-        }
+        
     ]
 }

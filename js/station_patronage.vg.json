@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 800,
-  "height": 450,
-  "title": "Melbourne Train Station Ridership",
+  "height":800,
+  "title": "Melbourne Train Station Ridership FY23-24",
   "projection": {
     "type": "conicEqualArea",
     "parallels": [-36, -38],
@@ -37,18 +37,6 @@
       "encoding": {
         "longitude": { "field": "Stop_long", "type": "quantitative" },
         "latitude": { "field": "Stop_lat", "type": "quantitative" },
-        "size": {
-            "field": "Pax_annual",
-            "type": "quantitative",
-            "scale": {
-                "range": [
-                    10,
-                    500
-                ]
-            },
-            "legend": {
-                "title": "Ridership (Size)"
-            }},
         "color": {
             "field": "Pax_annual", 
             "type": "quantitative",
@@ -65,7 +53,7 @@
         },
         "tooltip": [
           { "field": "Stop_name", "type": "ordinal", "title": "Stop Name" },
-          { "field": "Pax_annual", "type": "quantitative", "title": "Number of Passengers" }
+          { "field": "Pax_annual", "type": "quantitative", "title": "Number of Passengers","format" : ",d" }
         ]
       }
     }
